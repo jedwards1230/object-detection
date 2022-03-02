@@ -1,7 +1,6 @@
 import cv2
 import mediapipe as mp
 from imutils.video import FPS
-import time
 
 video_stream = "http://192.168.1.143:56000/mjpeg"
 
@@ -45,7 +44,7 @@ class HandDetector():
                 
         return landmark_list
 
-def main():
+if __name__=='__main__':
     vcap = cv2.VideoCapture(video_stream)
     hd = HandDetector()
     
@@ -69,6 +68,3 @@ def main():
             key = cv2.waitKey(1)
             if key == ord("q"):
                 break
-        
-if __name__=='__main__':
-    main()
