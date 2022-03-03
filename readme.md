@@ -1,5 +1,11 @@
 Playing with realtime computer vision libraries (PyTorch, OpenCV, MediaPipe)
 
+## count_tracked_fingers.py
+ - displays count of tracked fingers per hand
+ - TODO: ensure proper distinction between left and right from HandDetector
+ - TODO: refactor duplicate code
+ - TODO: Display results in center of screen
+
 ## Detectors.py 
  - uses mediapipe to track hands in a video 
 
